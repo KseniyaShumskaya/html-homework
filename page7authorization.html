@@ -1,0 +1,38 @@
+<!--форма авторизации на сайте-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Dogs world</title>
+    <meta charset="UTF-8">
+    <meta name="discription" content="zoo portal">
+    <meta name="keywords" content="dog">
+
+</head>
+<body>
+<form action="#" method="post"
+      enctype="multipart/form-data">
+    <fieldset > <!-- атрибут disabled -->
+        <legend>Текстовые поля</legend>
+        <p>
+            <!--для ввода почтового адреса-->
+            <input type="email"
+                   required  placeholder="введите e-mail">
+        </p>
+
+        <p>
+            <!--для ввода пароля-->
+            <input type="password"
+                   placeholder="введите пароль"
+                   minlength="2" maxlength="9">
+        </p>
+                <!--кнопка для отправки данных формы-->
+        <input type="submit" value="Отправить">
+    </fieldset>
+    <br>
+    <form action="main page.html" method="get">
+        <button type="submit" style="width:140px;height: 30px;">
+            Назад
+        </button>
+    </form>
+</body>
+</html>

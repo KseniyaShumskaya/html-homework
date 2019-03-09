@@ -1,0 +1,95 @@
+<!--форма регистрациии на сайте-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Dogs world</title>
+    <meta charset="UTF-8">
+    <meta name="discription" content="zoo portal">
+    <meta name="keywords" content="dog">
+
+</head>
+<body>
+     <form action="#" method="post"
+      enctype="multipart/form-data">
+        <fieldset >
+              <legend>Регистрация нового пользователя</legend>
+                     <p>
+                      <!--для ввода почтового адреса-->
+                       <input type="email"
+                              required  placeholder="введите e-mail">
+                     </p>
+                     <p>
+                         <!--для ввода пароля-->
+                       <input type="password"
+                              placeholder="введите пароль"
+                              minlength="5" maxlength="9">
+                     </p>
+                     <p>
+                <!--для ввода пароля-->
+                       <input type="password"
+                              placeholder="подтвердите пароль"
+                              minlength="5" maxlength="9">
+                     </p>
+                     <p>
+                         Выберите породу  <!--порода-->
+                       <select name="Порода">
+                           <option value="r1">Порода</option>
+                           <option value="r2">Американский стаффордширский терьер</option>
+                           <option value="r3">Американский питбудьтерьер</option>
+                           <option value="r4">Пудель</option>
+                           <option value="r5">Авганская борзая</option>
+                           <option value="r6">Американский бультерьер</option>
+                       </select>
+                    </p>
+                    <!--пол-->
+                     <p>
+                       <select name="sex">
+                            <option value="r1">Кобель</option>
+                            <option value="r2">Сука</option>
+                       </select>
+                     </p>
+                     <p>
+                    <!--для ввода дата рождения собаки-->
+                        <input type="password"
+                               placeholder="Дата рождения собаки">
+                     </p>
+                     <p>
+                             <!--для ввода № родословной в РКФ-->
+                        <input type="password"
+                               placeholder="№ родословной">
+                     </p>
+                     <p>
+            <!--для ввода ФИО владельца-->
+                        <input type="password"
+                               placeholder="ФИО владельца">
+                     </p>
+                     <p>
+            <!--для ввода ФИО заводчика-->
+                        <input type="password"
+                               placeholder="ФИО заводчика">
+                     </p>
+                     <p>
+            <!--для ввода наименование питомника-->
+                        <input type="password"
+                               placeholder="Питомник">
+                     </p>
+                     <p>
+            <!--кнопка для отправки данных формы-->
+                        <input type="submit" value="Отправить">
+                     </p>
+           </fieldset>
+           <fieldset>
+               <!--кнопка для загрузки фото-->
+             <legend> Загрузка документов</legend>
+             <!--атрибут за отправку форм-->
+             <form action="#" method="post" enctype="multipart/form-data">
+                 <p>
+                     <input type="file" multiple accept="image/*">
+                     <!--multiple позволяет загрузить несколько файлов, accept доступен только input с type="file"-->
+                 </p>
+
+             </form>
+           </fieldset>
+     </form>
+</body>
+</html>
