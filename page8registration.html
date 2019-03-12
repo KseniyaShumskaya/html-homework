@@ -6,90 +6,218 @@
     <meta charset="UTF-8">
     <meta name="discription" content="zoo portal">
     <meta name="keywords" content="dog">
-
 </head>
-<body>
-     <form action="#" method="post"
-      enctype="multipart/form-data">
-        <fieldset >
-              <legend>Регистрация нового пользователя</legend>
-                     <p>
-                      <!--для ввода почтового адреса-->
-                       <input type="email"
-                              required  placeholder="введите e-mail">
-                     </p>
-                     <p>
-                         <!--для ввода пароля-->
-                       <input type="password"
-                              placeholder="введите пароль"
-                              minlength="5" maxlength="9">
-                     </p>
-                     <p>
-                <!--для ввода пароля-->
-                       <input type="password"
-                              placeholder="подтвердите пароль"
-                              minlength="5" maxlength="9">
-                     </p>
-                     <p>
-                         Выберите породу  <!--порода-->
-                       <select name="Порода">
-                           <option value="r1">Порода</option>
-                           <option value="r2">Американский стаффордширский терьер</option>
-                           <option value="r3">Американский питбудьтерьер</option>
-                           <option value="r4">Пудель</option>
-                           <option value="r5">Авганская борзая</option>
-                           <option value="r6">Американский бультерьер</option>
-                       </select>
-                    </p>
-                    <!--пол-->
-                     <p>
-                       <select name="sex">
-                            <option value="r1">Кобель</option>
-                            <option value="r2">Сука</option>
-                       </select>
-                     </p>
-                     <p>
-                    <!--для ввода дата рождения собаки-->
-                        <input type="password"
-                               placeholder="Дата рождения собаки">
-                     </p>
-                     <p>
-                             <!--для ввода № родословной в РКФ-->
-                        <input type="password"
-                               placeholder="№ родословной">
-                     </p>
-                     <p>
-            <!--для ввода ФИО владельца-->
-                        <input type="password"
-                               placeholder="ФИО владельца">
-                     </p>
-                     <p>
-            <!--для ввода ФИО заводчика-->
-                        <input type="password"
-                               placeholder="ФИО заводчика">
-                     </p>
-                     <p>
-            <!--для ввода наименование питомника-->
-                        <input type="password"
-                               placeholder="Питомник">
-                     </p>
-                     <p>
-            <!--кнопка для отправки данных формы-->
-                        <input type="submit" value="Отправить">
-                     </p>
-           </fieldset>
-           <fieldset>
-               <!--кнопка для загрузки фото-->
-             <legend> Загрузка документов</legend>
-             <!--атрибут за отправку форм-->
-             <form action="#" method="post" enctype="multipart/form-data">
-                 <p>
-                     <input type="file" multiple accept="image/*">
-                     <!--multiple позволяет загрузить несколько файлов, accept доступен только input с type="file"-->
-                 </p>
+<body bgcolor="#B7D9B1" background="(6web.png)">
+<form action="#" method="post" enctype="multipart/form-data">
+    <fieldset >
+        <legend>Регистрация нового пользователя</legend>
+        <!--для ввода почтового адреса-->
+        <p>
+            <input type="email" required  placeholder="введите e-mail">
+        </p>
+        <p>
+            <!--для ввода пароля-->
+            <input type="password" placeholder="введите пароль" minlength="5" maxlength="9">
+        </p>
+        <p>
+            <!--для ввода пароля-->
+            <input type="password" placeholder="подтвердите пароль" minlength="5" maxlength="9">
+    </fieldset>
+    </p>
+    <fieldset >
+        <legend>Данные собаки</legend>
+        <!--порода-->
+        <p>Выберите породу<select name="Порода">
+                <optgroup label="Группа 1 (Пастушьи и скотогонные собаки, кроме швейцарских скотогонных собак)"</optionelected>
+                <option value="r1">Австралийская овчарка</option>
+                <option value="r2">Бельгийская овчарка</option>
+                <option value="r3">Бергамская овчарка </option>
+                <option value="r4">Бобтейл</option>
+                <option value="r5">Бородатая колли</option>
+                <option value="r6">Бордер колли</option>
+                <option value="r7">Босерон </option>
+                <option value="r8">Бриар </option>
+                <option value="r9">Вельш Корги Кардиган</option>
+                <option value="r10">Вельш Корги Пемброк </option>
+                <option value="r11">Голландская овчарка</option>
+                <option value="r12">Каталонская овчарка</option>
+                <option value="r13">Австралийский келпи </option>
+                <option value="r14">Колли д/ш </option>
+                <option value="r15">Колли к/ш </option>
+                <option value="r16">Комондор </option>
+                <option value="r17">Кувас</option>
+                <option value="r18">Маремма-абруцкая овчарка </option>
+                <option value="r19">Муди </option>
+                <option value="r20">Немецкая овчарка </option>
+                <option value="r21">Майорская пастушья собака</option>
+                <option value="r22">Пикардийская овчарка </option>
+                <option value="r23">Пиренейская овчарка д/ш </option>
+                <option value="r24">Пиренейская овчарка к/ш </option>
+                <option value="r25">Португальская овчарка</option>
+                <option value="r26">Польская низинная овчарка </option>
+                <option value="r27">Польская подгалянская овчарка</option>
+                <option value="r28">Пули </option>
+                <option value="r29">Пуми </option>
+                <option value="r30">Саарлооская волчья собака /option>
+                <option value="r31">Словацкий чувач</option>
+                <option value="r32">Хорватская овчарка</option>
+                <option value="r33">Чехословацкая волчья собака</option>
+                <option value="r34">Шапендоес </option>
+                <option value="r35">Шелти (шетландская овчарка)</option>
+                <option value="r36">Схиперке </option>
+                <option value="r37">Белая швейцарская овчарка</option>
+                <option value="r38">Румынская овчарка Миоритик (Миоритская овчарка)</option>
+                <option value="r39">Румынская карпатская овчарка (Карпатская овчарка)</option>
+                <option value="r40">Южнорусская овчарка </option>
+                <option value="r41">Австралийский хилер </option>
+                <option value="r42">Арденский бувье</option>
+                <option value="r43">Фландрский бувье </option>
+                <optgroup label="Группа 2 (Пинчеры и шнауцеры, молоссы, горные собаки и швейцарские скотогонные собаки)"</optionelected>
+                <option value="r1">  </option>
+                <option value="r2">  </option>
+                <option value="r3">  </option>
+                <option value="r4">  </option>
+                <optgroup label="Группа 3 (Терьеры)"</optionelected>
+                <option value="r1">Бедлингтон терьер</option>
+                <option value="r2">Бордер терьер</option>
+                <option value="r3">Бразильский терьер</option>
+                <option value="r4">Вельш терьер</option>
+                <option value="r5">Ирланский Глен оф Имаал терьер</option>
+                <option value="r6">Ирландский мягкошерстный пшеничный терьер</option>
+                <option value="r7">Ирландский терьер</option>
+                <option value="r8">Керри бля терьер</option>
+                <option value="r9">Лейкленд терьер</option>
+                <option value="r10">Манчестер терьер</option>
+                <option value="r11">Немецкий ягдтерьер</option>
+                <option value="r12">Парсон Рассел терьер</option>
+                <option value="r13">Фокстерьер</option>
+                <option value="r14">Эрдель терьер</option>
+                <option value="r15">Австралийский терьер</option>
+                <option value="r16">Вест хайленд вайт терьер</option>
+                <option value="r17">Денди динмонт терьер</option>
+                <option value="r18">Джек Рассел терьер</option>
+                <option value="r19">Керн терьер</option>
+                <option value="r20">Норвич терьер</option>
+                <option value="r21">Норфолк терьер</option>
+                <option value="r22">Силихем терьер</option>
+                <option value="r23">Скай терьер</option>
+                <option value="r24">Скотч терьер</option>
+                <option value="r25">Чешский терьер</option>
+                <option value="r26">Японский терьер</option>
+                <option value="r27">Американский стаффордширский терьер</option>
+                <option value="r28">Бультерьер</option>
+                <option value="r29">Стаффордширский бультерьер</option>
+                <option value="r30">Австралийский шелковый терьер</option>
+                <option value="r31">Английский той терьер</option>
+                <option value="r32">Йоркширский той терьер</option>
+                <optgroup label="Группа 4 (Таксы)"</optionelected>
+                <optgroup label="Группа 5 (Шпицы и породы примитивного типа)"</optionelected>
+                <optgroup label="Группа 6 (Гончие, гончие по кровяному следу и родственные породы)"</optionelected>
+                <optgroup label="Группа 7 (Легавые)"</optionelected>
+                <optgroup label="Группа 8 (Ретриверы, спаниели, водяные собаки)"</optionelected>
+                <optgroup label="Группа 9 (Собаки-компаньоны)"</optionelected>
+                <optgroup label="Группа 10 (Борзые)"</optionelected>
+            </select>
+            </p>
+            <!--пол-->
+            <p>Пол</p>
+            <p>
+                <label><input type=radio name="sex">кобель</label>
+                <label><input type=radio name="sex">сука</label>
+            </p>
+            <!--для ввода дата рождения собаки-->
+            <p>
+            <label for="date">Дата рождения собаки</label>
+            <input id="date" type="date">
+            </p>
+            <!--для ввода окраса-->
+            <p>Окрас по документам</p>
+            <p>
+                <textarea cols="30" rows="5" autofocus required placeholder="подсказка">
+                </textarea>
+            </p>
 
-             </form>
-           </fieldset>
-     </form>
+            <!--для ввода страны происхождения-->
+            <p>Страна происхождения</p>
+              <select name="select" size="3" required>
+                <option value="r1">Аргентина</option>
+                <option value="r2">Австралия</option>
+                <option value="r3">Ангола</option>
+                <option value="r4">Россия</option>
+                <option value="r5">Украина</option>
+                <option value="r6">Белоруссия терьер</option>
+                <option value="r7">Латвия</option>
+                <option value="r8">Литва терьер</option>
+                <option value="r9">Финляндия</option>
+                <option value="r10">Норвегия</option>
+                <option value="r10">Эстония</option>
+            </select>
+
+            <!--для ввода № родословной в РКФ-->
+            <p>
+                <input type="password" placeholder="№ родословной">
+            </p>
+            <p>
+            <input type="stigma" placeholder="клеймо">
+            </p>
+            <p>
+                <!--clead all information from the form-->
+                <input type="reset" value="очистить поля формы">
+            </p>
+        </fieldset>
+        <fieldset>
+            <!--для ввода ФИО заводчика-->
+            <legend>Данные заводчика</legend>
+            <p>
+                <input type="password" placeholder="ФИО заводчика">
+            </p>
+            <p>
+                <!--для ввода наименование питомника-->
+                <input type="password" placeholder="Питомник">
+            </p>
+            <p>Адрес питомника</p>
+            <p>
+                <textarea cols="30" rows="5" autofocus required placeholder="подсказка">
+                </textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+                <!--для ввода ФИО владельца-->
+                <legend>Данные владельца</legend>
+                <p>
+                    <input placeholder="ФИО владельца">
+                </p>
+                <p>Адрес валадельца</p>
+                <p>
+                  <textarea cols="30" rows="5" autofocus required placeholder="подсказка">
+                  </textarea>
+               </p>
+
+            </fieldset>
+        </fieldset>
+
+    </fieldset>
+    <fieldset>
+        <p>
+            <label for="date">Дата заполнения формы</label>
+            <input id="date" type="date">
+        </p>
+        <!--кнопка для загрузки фото-->
+        <legend> Загрузка документов</legend>
+        <!--атрибут за отправку форм-->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <p>
+                <input type="file" multiple accept="image/*">
+                <!--multiple позволяет загрузить несколько файлов, accept доступен только input с type="file"-->
+            </p>
+        </form>
+
+
+        <!--кнопка для отправки данных формы-->
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+    </fieldset>
+</form>
 </body>
 </html>
