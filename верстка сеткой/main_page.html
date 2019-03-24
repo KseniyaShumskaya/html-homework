@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Верстка сеткой</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" >
+</head>
+<body>
+<div class="container"> <!--общий контейнер для всех блокой-->
+    <div class="container"> <!--контейнер для меню и слайдера 2 строки на всю ширину-->
+        <div class="row"><!--строка с меню-->
+            <div class="col-12 nav">
+                <ul class="nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Цени</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row"><!--строка со слайдером-->
+        <div class="col-12">
+            <ul class="slider">
+                <li><img src="#"></li>
+                <li><img src="#"></li>
+                <li><img src="#"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container"><!--подконтейнер, где будут делиться блоки-->
+        <div class="row"> <!--в него заворачиваем-->
+            <div class="col-8"><!--первая строка и от нее берем 8 частей-->
+                <div class="row"><!--берем 8 частей за 12 и делим на 2 равные части, 1-я строка-->
+                    <div class="col-6"> <!--первая часть 12/2=6 будет 1-й блок-->
+                        <div class="card">Блок 1-1</div>
+                    </div>
+                    <div class="col-6"><!--вторая часть 12/2=6 будет 2-й блок-->
+                        <div class="card">Блок 1-2</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12"><!--берем за 12 частей, 2-я строка-->
+                        <div class="card">Блок 2-1</div>
+                    </div>
+                </div>
+                <div class="row"><!--берем за 12 частей и делим на 2 равные части, 3-я строка-->
+                    <div class="col-6">
+                        <div class="card">Блок 3-1</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">Блок 3-2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"><!--берем 4 части которые займут все строки-->
+                <div class="card block-1-3">Блок 1-3</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
